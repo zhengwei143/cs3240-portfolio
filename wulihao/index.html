@@ -1,0 +1,137 @@
+---
+title: Wu Li Hao
+layout: page
+---
+
+<div class="page-content">
+  <h2 class="center">WU LI HAO</h2>
+
+  <h3>Introduction </h3>
+  <div class="row">
+    <div class="col-md-6 col-sm-9">
+      <p>
+        Our team of developers designed and built a suite of applications for a local Noodles Manufacturing & Logistics Company (Wu Li Hao).
+      </p>
+      <br/>
+      <p>
+        Wu Li Hao's customers are mainly vendors or restaurants that buy the noodles in bulk for their daily businesses. The owners of the company were referred to us via a mutual acquaintance to come up with a electronic solution to solve their problems due to high workloads.
+      </p>
+    </div>
+    <div class="col-md-6 col-sm-9">
+      <img src="{{ site.baseurl }}/img/portfolio/wlh/deliveries.png" class="img-portfolio"/>
+    </div>
+  </div>
+
+  <h2 class="center">INITIAL ACTIONS</h2>
+
+  <h3>Requirements Gathering</h3>
+  <div class="row">
+    <div class="col-md-9 col-sm-12">
+      <p>
+        Our team first met with our clients from Wu Li Hao to understand their needs and problems faced with the original system for data management. This included a site visit where the administrative staff verbally ran us through each process step-by-step while working on their excel sheets. This gave us a clear understanding on the processes involved and the flow of data.
+      </p>
+    </div>
+  </div>
+
+
+  <h3>PROCESSES</h3>
+  <div class="row">
+    <div class="col-md-9 col-sm-12">
+      <ol>
+        <li>Customers made orders by making phone calls during office hours a few days in advance, and an admin staff would record down the order on an excel sheet.</li>
+        <li>They would then use a templating software to generate out the invoice which would be printed to be signed on the day of delivery.</li>
+        <li>The company also manages their own deliveries, splitting the orders amongst their drivers based on location and further balancing their workloads to ensure prompt delivery.</li>
+        <li>The drivers are provided with a checklist of orders to load up into their vehicles before departure.</li>
+        <li>Upon delivery of the product, payment is made, which is collated at the end of the day.</li>
+      </ol>
+    </div>
+  </div>
+
+  <h3>Problems</h3>
+  <div class="row">
+    <div class="col-md-9 col-sm-12">
+      <ul>
+        <li>Inconvenience in managing data in excel sheets.</li>
+        <li>Too much manpower required in handling phone calls.</li>
+        <li>Having hundreds of customers and a small staff, this placed a tremendous workload on them from just handling phone calls and processing each order​.</li>
+        <li>Generation of invoices was time consuming due to the large number of incoming orders every day.</li>
+        <li>Issues with managing workloads make it difficult for them to handle a larger customer base, preventing them from scaling their business well.</li>
+      </ul>
+    </div>
+  </div>
+
+  <h2 class="center">Phases</h2>
+
+  <h3>1. Identifying Workflows</h3>
+  <div class="row">
+    <div class="col-md-12 col-sm-18" style="height: 550px;">
+      <img src="{{ site.baseurl }}/img/portfolio/wlh/wlh-overall-layout.png" class="img-portfolio"/>
+    </div>
+  </div>
+  <br/>
+  <div class="row">
+    <div class="col-md-9 col-sm-12">
+      <p>
+        We first separated their processes into multiple components.
+      </p>
+      <ol>
+        <li>Order Placement</li>
+        <li>Delivery Management</li>
+        <li>Product Catalog Management</li>
+        <li>Customer Management</li>
+        <li>Driver Management</li>
+      </ol>
+      <p>
+        Subsequently, we identified the key actions required at each component in order to decide on what features are required at each process.
+      </p>
+    </div>
+  </div>
+
+  <h3>2. Design</h3>
+  <div class="row">
+    <div class="col-md-9 col-sm-12">
+      <p>
+        We first started out with low-fidelity paper prototypes, simulating clicks and by physically switching between the pages. After 2 rounds of meeting with the clients, discussing and subsequently redesigning the designs with them using the paper prototypes, we moved on to high-fidelity prototypes using Adobe XD.
+      </p>
+      <br/>
+      <p>
+        The solution we suggested to them involved 3 applications (Links to the wireframes have been provided if you wish to play around with them):
+      </p>
+      <ol>
+        <li>Customer Mobile App - <a href="https://xd.adobe.com/view/32a52546-8853-4945-b626-5f752f0ff57f/" target="_blank">Customer Wireframes</a></li>
+        <p>
+          Customers are given an account by the company with which they can log into the applications on their mobile devices. With this, they are able to easily place orders as well as duplicate past orders (since orders were likely going to be recurring and the same each time).
+        </p>
+        <li>Driver Mobile App - <a href="https://xd.adobe.com/view/f7d8782d-8d8e-4b12-925d-de6588835308/" target="_blank">Driver Wireframes</a></li>
+        <p>
+          Drivers that make the deliveries are also given an mobile application for them to quickly check off delivered orders, as well as to view the inventory of their vehicle at any point during their deliveries.
+        </p>
+        <li>Admin Desktop App - <a href="https://xd.adobe.com/view/5919d292-5c3f-4cee-9238-909571ccddad/" target="_blank">Admin Wireframes</a></li>
+        <p>
+          Admin staff have the ability to do almost everything from this application:  placing orders on behalf of customers, printing of invoices, management of customer data (price discriminations), product catalogs etc.
+        </p>
+      </ol>
+      <br/>
+      <p>
+        Overall, the suite of applications (design and features included) is meant to cover the workflows identified in the previous phase.
+      </p>
+    </div>
+  </div>
+
+  <h3>3. Development</h3>
+  <div class="row">
+    <div class="col-md-9 col-sm-12">
+      <p>
+        We began development midway through the design phase, in order to get the basic components up. We mainly focused on the portions of the design that were already agreed upon, working on a single component at a time and meeting up with the clients every few weeks for them to test the prototypes.
+      </p>
+      <br/>
+      <p>
+        Due to difficulties in the implementation for certain designs, such as the table grid for (size x weight) prices, we had to make modifications in the design, which we made sure to communicate back to our clients to agree on a new design.
+      </p>
+      <br/>
+      <p>
+        Towards the end of our development phase, we had a final User Acceptance Test where we let the clients test the system without our guidance. Slight modifications were made based on the feedback before the product was deployed for them to use.
+      </p>
+    </div>
+  </div>
+</div>

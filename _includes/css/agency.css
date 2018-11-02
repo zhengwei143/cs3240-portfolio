@@ -78,6 +78,43 @@ h6 {
     background-color: #222;
 }
 
+.white {
+    background-color: white;
+}
+
+.full-page {
+    min-height: 100vh;
+}
+
+.page-content {
+    padding-top: 5%;
+    padding-bottom: 15%;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.page-content p, ol, ul {
+    font-family: {{ site.data.template.font.primary }};
+    font-size: 22px;
+    line-height: 32px;
+}
+
+.page-content h2 {
+    font-size: 40px;
+    line-height: 40px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.page-content h3 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+h2, h3.center {
+    text-align: center;
+}
+
 .btn-primary {
     border-color: #{{ site.data.template.color.primary }};
     text-transform: uppercase;
@@ -182,6 +219,10 @@ fieldset[disabled] .btn-xl.active {
 .navbar-default {
     border-color: transparent;
     background-color: #222;
+}
+
+.page-nav {
+    padding-bottom: 0px;
 }
 
 .navbar-default .navbar-brand {
@@ -337,8 +378,11 @@ header .intro-text .intro-heading {
 }
 
 section {
+    min-height: 100vh;
+}
+
+section.padded {
     padding: 100px 0;
-    height: 100vh;
 }
 
 section .container {
@@ -361,7 +405,7 @@ section h3.section-subheading {
 }
 
 @media(min-width:768px) {
-    section {
+    section.padded {
         padding: 150px 0;
     }
 }
