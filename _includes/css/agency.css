@@ -181,6 +181,7 @@ fieldset[disabled] .btn-primary.active {
 .btn-xl:active,
 .btn-xl.active,
 .open .dropdown-toggle.btn-xl {
+    text-decoration: none;
     border-color: #{{ site.data.template.color.primary }};
     color: #fff;
     background-color: #{{ site.data.template.color.secondary }};
@@ -334,8 +335,8 @@ header .container {
 }
 
 header .intro-text {
-    padding-top: 40%;
-    padding-bottom: 40%;
+    padding-top: 30%;
+    padding-bottom: 30%;
 }
 
 header .intro-text .intro-lead-in {
@@ -356,8 +357,8 @@ header .intro-text .intro-heading {
 
 @media(min-width:768px) {
     header .intro-text {
-        padding-top: 40%;
-        padding-bottom: 40%;
+        padding-top: 30%;
+        padding-bottom: 30%;
     }
 
     header .intro-text .intro-lead-in {
