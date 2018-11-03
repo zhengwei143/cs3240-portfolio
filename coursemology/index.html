@@ -86,7 +86,22 @@ layout: page
       </p>
       <br/>
       <p>
-        I added additional code editors under each test case, so that code related specifically to each test case would be situated next to the (graphical) test case itself. This way, it became much more convenient and intuitive for users when creating large numbers of test cases for the question.
+        I added additional code editors under each test case, so that code related specifically to each test case would be situated next to the (graphical) test case itself. Visually, since the components are next to each other, it would be clearer for the user to associate the two together, which would improve the readability of the interface as a whole (code and graphical components together).
+      </p>
+    </div>
+  </div>
+
+  <h3>Lessons Learnt</h3>
+  <div class="row">
+    <div class="col-md-9 col-sm-12">
+      <p>
+        This case is actually is a little bit more special than other cases - where the implementation of the code is tightly coupled with, and severely restricts the design of the graphical interface.
+      </p>
+      <br/>
+      <p>
+        In this case, it becomes a choice between Intuitiveness and Functionality, both of which affect the User Experience. At this point, we need to compare the pain points of lacking one over the other (vice versa), and the frequency of use of the both of them.
+
+        The decision I made in the end was to forgo a the intuitiveness of the User Interface for creating questions, due to the low frequency of use. On the other hand, if there was a lack in functionality resulting in the inability to create questions, this would reduce the quality and range of questions available to students, directly affecting the quality of the online course as a whole. This would be much more severe, since it might be a strong reason to deter users from using the application.
       </p>
     </div>
   </div>
