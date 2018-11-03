@@ -7,4 +7,84 @@ layout: page
 <div class="page-content">
   <h2 class="center">CVWO SUMMER 2018</h2>
 
+  <h3>Introduction</h3>
+  <div class="row">
+    <div class="col-md-9 col-sm-12">
+      <p>
+        Computing for Voluntary Welfare Organisations (CVWO) is an initiative that has been ongoing for the past 10 years, where student developers are selected to develop and build applications for Voluntary Welfare Organsiations over every summer.
+      </p>
+      <br/>
+      <p>
+        This year, we were approached by NUS School of Medicine (SoM) to build an application for their student led befriending programmes, with the goal of helping them with their data management. These befriending programmes involve students from SoM visiting beneficiaries in groups to conduct regular medical checkups at their homes, and keeping track of the medical data gathered from these visits. These beneficiaries were referred to the programmes from hospices and hospitals, and were all previously an ex-patients of the respective organisations with some chronic condition that requires regular checking up on.
+      </p>
+      <br/>
+      <p>
+        As the team leader for the team in charge of this project, I was tasked with the oversight of the designs and development of the application.
+      </p>
+    </div>
+  </div>
+
+  <h3>Prototyping</h3>
+  <div class="row">
+    <div class="col-md-9 col-sm-12">
+      <p>
+        We started off with paper prototypes, and we based off our designs off a list of user requirements that they gave to us the previously.
+      </p>
+      <br/>
+      <p>
+        Using these prototypes, it was easier to modify the designs - we sat down with the students from SoM to further discuss whilst making minor tweaks. Once the designs were settled, we started to build a 
+      </p>
+    </div>
+  </div>
+  <br/>
+  <div class="row">
+    <div class="col-md-4 col-sm-6">
+      <img src="{{ site.baseurl }}/img/portfolio/cvwo/cvwo-wireframes-1.jpg" class="img-portfolio"/>
+    </div>
+    <div class="col-md-4 col-sm-6">
+      <img src="{{ site.baseurl }}/img/portfolio/cvwo/cvwo-wireframes-2.jpg" class="img-portfolio"/>
+    </div>
+    <div class="col-md-4 col-sm-6">
+      <img src="{{ site.baseurl }}/img/portfolio/cvwo/cvwo-wireframes-3.jpg" class="img-portfolio"/>
+    </div>
+  </div>
+
+  <h3>User flows</h3>
+  <div class="row">
+    <div class="col-md-9 col-sm-12">
+      <p>
+        Due to the nature of the application and the fact that it deals with patient data, we enforced different levels of permissions amongst the users. In total, we had 3 kinds of users:
+      </p>
+      <br/>
+      <ol>
+        <li>Project Admin - Full permissions to view and manage data</li>
+        <li>Organisation Admin - Permissions to view / modify data of their own patients (that were referred by their organisation)</li>
+        <li>Befriender - Permission to modify data of patients assigned to them</li>
+      </ol>
+      <br/>
+      <p>
+        Because of this, the UI varies based on the role of the user in the project - typically users will not be able to see or interact with any functionalities that they do not have permission to. Based on the designs agreed upon with the paper prototypes, wireframes were created for each role based on the types of . In addition, because the web application was meant to be responsive as well, we added in an additional wireframe for the mobile view as well. 
+      </p>
+      <br/>
+      <p>A zipfile containing each user role's wireframes can be downloaded <a href="{{ site.baseurl }}/img/portfolio/cvwo/nuscares_user_flows.zip" target="_blank">here</a>.</p>
+      <p>(Open the index.html files within each subfolder on your browser to view - the wireframes were created using MockingBot)</p>
+    </div>
+  </div>
+
+  <h3>Thoughts</h3>
+  <div class="row">
+    <div class="col-md-9 col-sm-12">
+      <p>
+        Based on the discussions with the students from SoM, it became apparent that they were not entirely clear on the features they wanted, and did not know what would be good for them. I think this is a very realistic expectation to have of clients when approaching them for the user study.
+      </p>
+      <br/>
+      <p>
+        Many times, our clients may not always be as IT savvy as the developers (or designers for that matter), as such, they are not clear of what is the scope of features that can be provided to them. It is quite often that clients either have no idea what they want or need to solve their problems, or they expect the impossible (or unrealistic) from the developers. As such, it is our job to manage their expectations.
+      </p>
+      <br/>
+      <p>
+        I would also like to place emphasis on user flows and how the application would look like from the perspective of each user. Take YouTube for example, a video will likely and should appear different from the other users as compared to the owner of the video (who might need extra functionalities). It is not uncommon for there to be multiple User Flows in applications today, and building wireframes for each of them is important as it is provides us with an idea of how the application would look and feel from the point of view of each user.
+      </p>
+    </div>
+  </div>
 </div>
