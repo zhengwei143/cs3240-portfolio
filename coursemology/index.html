@@ -1,0 +1,93 @@
+---
+title: Coursemology
+layout: page
+---
+
+
+<div class="page-content">
+  <h2 class="center">Coursemology</h2>
+
+  <h3>Introduction</h3>
+  <div class="row">
+    <div class="col-md-9 col-sm-12">
+      <p>
+        Coursmology is an online platform for teachers or professors to create online courses (mainly targetted at Programming) with all the functionalities that they would need to run the course. Features include:
+      </p>
+      <br/>
+    </div>
+    <div class="col-md-6 col-sm-9">
+      <ul>
+        <li>Online assessments for Continual Assessment</li>
+        <li>Announcements</li>
+        <li>Forum for discussion</li>
+        <li>Inline annotations for comments on code</li>
+        <li>Workbin for uploading of materials</li>
+        <li>Lesson Plan (Timeline)</li>
+        <li>Surveys</li>
+        <li>Videos</li>
+      </ul>
+      <br/>
+    </div>
+    <div class="col-md-4 col-sm-6">
+      <img src="{{ site.baseurl }}/img/portfolio/coursemology/coursemology-landing.png" class="img-portfolio"/>
+    </div>
+    <div class="col-md-9 col-sm-12">
+      <p>
+        Although this is just a subset of the features available on the application, it should provide quite a clear picture of what it aims to do: to provide a wholesome experience for educators to run their courses through the school term. In addition, Coursemology adds a spin to things by gamifying the entire course, where students are encouraged to do more practices and score higher in order to gain more "experience" to level up. This encourages students adds the element of fun to the learning process for students, and makes learning a little less boring.
+      </p>
+      <br/>
+    </div>
+  </div>
+
+  <h3>Task</h3>
+  <div class="row">
+    <div class="col-md-9 col-sm-12">
+      <p>
+        I was tasked with developing the backend and building the frontend User Interface for the creation of questions and test cases for C/C++ and Java questions. While there was already an existing User Interface that was built for Python questions, this task turned out to be not as simple as I initially thought.
+      </p>
+      <br/>
+    </div>
+
+    <div class="col-md-6 col-sm-9">
+      <img src="{{ site.baseurl }}/img/portfolio/coursemology/c-question-creation.png" class="img-portfolio"/>
+    </div>
+    <div class="col-md-6 col-sm-9">
+      <img src="{{ site.baseurl }}/img/portfolio/coursemology/normal-testcases.png" class="img-portfolio"/>
+    </div>
+
+    <div class="col-md-9 col-sm-12">
+      <p>
+        The images above was the (then) existing User Interface used to create the questions and test cases. As seen, the interface was a mix of both code editors as well as proper elements that pieced together a single question. This was due to the nature of the problem, the implementation required both a mix of flexibility (in being able to create all sorts of questions) as well as an intuitive graphical design. 
+      </p>
+      <br/>
+
+      <p>
+        Although it might have been nice to do away with the code editors, it turned out to be a must-have feature as without them, it would be difficult for the user to create any questions to begin with. The code editors sacrificed a bit of the intuitiveness of the user experience for flexibility and functionality.
+      </p>
+      <br/>
+    </div>
+  </div>
+
+  <h3>Designs & Thoughts</h3>
+  <div class="row">
+    <div class="col-md-9 col-sm-12">
+      <p>
+        Due to differences in implementation in the backend (for C/C++/Java and the already existing implementation - Python), I found that I was at the same crossroads with a choice to make - Inituitiveness against Functionality. Of course, I choice the latter. Given that the setup of questions was mainly a one-time thing at the start of the semester, the effect of the lack of intuitiveness was far outweighed by the flexibility and functionality that came with the less intuitive design.
+      </p>
+    </div>
+
+    <div class="col-md-12 col-sm-18">
+      <img src="{{ site.baseurl }}/img/portfolio/coursemology/question-testcase-diagram.png" class="img-portfolio"/>
+    </div>
+
+    <div class="col-md-9 col-sm-12">
+      <p>
+        There were, however, places were I could further improve on the design of the User Interface. Previously, variables were all declared in the code editors on the left, which meant that users would have to constantly scroll up and down between the above 2 screens (the left screen is above the right screen on the application) to refer to the variables when creating test cases. 
+      </p>
+      <br/>
+      <p>
+        I added additional code editors under each test case, so that code related specifically to each test case would be situated next to the (graphical) test case itself. This way, it became much more convenient and intuitive for users when creating large numbers of test cases for the question.
+      </p>
+    </div>
+  </div>
+</div>
